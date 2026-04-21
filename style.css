@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0a0f1c;
+  background: linear-gradient(135deg, #0a0f1c, #0d1325);
   color: white;
 }
 
@@ -20,11 +20,8 @@ nav a {
 
 /* HERO */
 .hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  padding: 120px 20px;
 }
 
 .hero span {
@@ -34,11 +31,16 @@ nav a {
 .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   background: #7c5cff;
   border-radius: 10px;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5a3fff;
 }
 
 /* SKILLS */
@@ -46,35 +48,46 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 50px;
+  padding: 40px;
 }
 
-.card {
+.skill-card {
   background: #11182a;
   padding: 20px;
   border-radius: 15px;
   transition: 0.3s;
 }
 
-.card:hover {
+.skill-card:hover {
   transform: scale(1.1);
 }
 
 /* PROJECTS */
 #projects {
-  padding: 50px;
   text-align: center;
+  padding: 60px;
 }
 
-.project {
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
   background: #11182a;
-  margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
-  width: 60%;
+  width: 250px;
+  transition: 0.3s;
 }
 
-.project a {
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card a {
   color: #7c5cff;
 }
 

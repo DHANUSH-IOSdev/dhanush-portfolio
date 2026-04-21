@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0a0f1c, #0d1325);
   color: white;
 }
@@ -14,9 +9,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
+  padding: 20px 50px;
 }
 
 .navbar ul {
@@ -34,86 +27,59 @@ body {
 }
 
 .cv-btn {
-  background: linear-gradient(135deg, #7c5cff, #5b2fff);
+  background: #7c5cff;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
   color: white;
+  border-radius: 8px;
 }
 
 /* HERO */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px;
+  justify-content: space-between;
+  padding: 80px 50px;
 }
 
-.hero .left h1 {
-  font-size: 50px;
+.hero .left {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 60px;
 }
 
 .hero span {
   color: #8b5cf6;
 }
 
-.hero h2 {
-  margin: 10px 0;
-  color: #aaa;
+.hero img {
+  width: 250px;
 }
 
-.buttons {
-  margin-top: 20px;
-}
-
+/* BUTTONS */
 .btn {
-  padding: 12px 25px;
+  padding: 10px 20px;
+  border-radius: 8px;
   margin-right: 10px;
-  border-radius: 10px;
-  text-decoration: none;
 }
 
 .primary {
-  background: #7c5cff;
+  background: #8b5cf6;
 }
 
 .secondary {
-  border: 1px solid #7c5cff;
+  border: 1px solid white;
 }
 
-/* ABOUT */
-.about {
-  padding: 60px;
+/* SECTIONS */
+.section {
+  padding: 80px 50px;
   text-align: center;
 }
 
-.stats {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* SKILLS */
-.skills {
-  padding: 60px;
-  text-align: center;
-}
-
-.skill-box span {
-  display: inline-block;
-  background: rgba(255,255,255,0.1);
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-/* PROJECTS */
-.projects {
-  padding: 60px;
-  text-align: center;
-}
-
+/* CARDS */
 .cards {
   display: flex;
   justify-content: center;
@@ -121,18 +87,8 @@ body {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: #111827;
   padding: 20px;
-  border-radius: 15px;
-  width: 250px;
-}
-
-.card a {
-  color: #8b5cf6;
-}
-
-/* CONTACT */
-.contact {
-  padding: 60px;
-  text-align: center;
+  border-radius: 12px;
+  width: 200px;
 }
